@@ -1,0 +1,5 @@
+[versions]
+kotlin-io = "0.8.2"
+
+[libraries]
+kotlin-io-core = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "kotlin-io" }

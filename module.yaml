@@ -2,7 +2,15 @@ product:
   type: lib
   platforms:
     - jvm
-    - android
-    - iosArm64
-    - iosSimulatorArm64
-    - iosX64
+    - linuxArm64
+    - linuxX64
+    - macosArm64
+    - macosX64
+    - mingwX64
+
+dependencies:
+  - $libs.kotlin.io.core
+
+settings:
+  kotlin:
+    serialization: properties

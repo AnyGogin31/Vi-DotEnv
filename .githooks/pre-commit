@@ -1,0 +1,22 @@
+#!/bin/bash
+
+check_current_branch() {
+    echo -e "\nChecking current branch..."
+    CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    if [[ "$CURRENT_BRANCH" == "main" ]]; then
+        echo -e "Direct commits to '$CURRENT_BRANCH' are not allowed. Switch to a feature branch."
+        exit 1
+    fi
+}
+
+check_for_changes() {
+    if git diff --cached --quiet; then
+        echo -e "\nNo staged changes to commit. Aborting pre-commit hook."
+        exit 0
+    fi
+}
+
+check_current_branch
+check_for_changes
+
+exit 0

@@ -1,0 +1,28 @@
+# Ignore build directories for all modules
+**/build/
+!src/**/build/
+
+# Ignore IntelliJ IDEA project files
+.idea
+!.idea/copyright/
+!.idea/inspectionProfiles/
+!.idea/.name
+
+# Ignore IntelliJ module files
+*.iml
+
+# Ignore Kotlin-specific cache directories
+.kotlin
+
+# Ignore Gradle cache directories
+.gradle
+
+# Ignore local machine-specific properties
+local.properties
+
+# Ignore macOS system files
+.DS_Store
+
+# Ingore ktlint
+ktlint
+ktlint.bat

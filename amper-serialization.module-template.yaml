@@ -1,0 +1,9 @@
+settings:
+  kotlin:
+    serialization:
+      enabled: true
+      version: 1.9.0
+
+dependencies:
+  - $kotlin.serialization.core
+  - $kotlin.serialization.properties

@@ -1,0 +1,5 @@
+settings:
+  kotlin:
+    apiVersion: 2.3
+    languageVersion: 2.3
+    progressiveMode: true

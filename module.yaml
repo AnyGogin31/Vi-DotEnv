@@ -8,9 +8,9 @@ product:
     - macosX64
     - mingwX64
 
+apply:
+  - ./amper-kotlin.module-template.yaml
+  - ./amper-serialization.module-template.yaml
+
 dependencies:
   - $libs.kotlin.io.core
-
-settings:
-  kotlin:
-    serialization: properties

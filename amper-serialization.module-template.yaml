@@ -3,6 +3,8 @@ settings:
     serialization:
       enabled: true
       version: 1.9.0
+    optIns:
+      - kotlinx.serialization.ExperimentalSerializationApi
 
 dependencies:
   - $kotlin.serialization.core
